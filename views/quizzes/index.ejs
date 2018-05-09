@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> Quizzes </title>
+    <link rel='stylesheet' href='../stylesheet/style.css' />
+ </head>
+    <body>
+       <h1>Lista de Quizzes</h1>
+      <ul>
+      <% quizzes.forEach(function(quiz) { %>
+      <li>
+      <%= quiz.question %> : <%= quiz.answer %>
+      </li>
+      <%  }) %>
+	   </ul>
+    </body>
+</html>
